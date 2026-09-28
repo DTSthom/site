@@ -1,0 +1,34 @@
+# Allowlist: deny everything, then permit only the files the site serves.
+*
+!.gitignore
+!.nojekyll
+!README.md
+!CNAME
+!index.html
+!404.html
+!robots.txt
+!sitemap.xml
+!style.css
+!site.js
+!favicon.svg
+!favicon.ico
+!apple-touch-icon.png
+!img/
+!img/*.webp
+!img/og.jpg
+!fonts/
+!fonts/*.woff2
+!fonts/OFL.txt
+
+# Hard denies, kept even if the allowlist grows.
+*.pdf
+*.heic
+*.HEIC
+*.md.bak
+NOTES*
+OPEN-QUESTIONS*
+docs/
+scratch/
+.env*
+node_modules/
+.DS_Store
